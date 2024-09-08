@@ -7,12 +7,12 @@ const userlocation = document.getElementById("location");
 
 
 async function getdata(city) {
-    const result = await fetch(`http://api.weatherapi.com/v1/current.json?key=8e115fcaa1e14570bda84658240609&q=${city}&aqi=yes`)
+    const result = await fetch(`https://api.weatherapi.com/v1/current.json?key=8e115fcaa1e14570bda84658240609&q=${city}&aqi=yes`)
     return await result.json();
 }
 
 async function getlocation(lat, long) {
-    const result1 = await fetch(`http://api.weatherapi.com/v1/current.json?key=8e115fcaa1e14570bda84658240609&q=${lat},${long}&aqi=yes`)
+    const result1 = await fetch(`https://api.weatherapi.com/v1/current.json?key=8e115fcaa1e14570bda84658240609&q=${lat},${long}&aqi=yes`)
     return await result1.json();
 }
 
